@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Top 5 beaches to visit in Mangaluru">
+  <title>Top 5 Beaches in Kudla | Namma Kudla Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Namma Kudla</h1>
+        <span class="tagline">Explore Mangaluru</span>
+      </div>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <div class="container">
+      <article class="post">
+        <h1>Top 5 Beaches in Kudla</h1>
+        <p class="meta">By Admin | November 12, 2025 | <span class="category">Beaches</span></p>
+        
+        <img src="assets/images/panambur-beach.jpg" alt="Panambur Beach">
+        
+        <div class="post-body">
+          <p>Mangaluru, nestled on the beautiful Karav ali coast, is blessed with some of the most pristine and scenic beaches in Karnataka. Whether you're looking for adventure, tranquility, or simply a place to watch the sunset, Kudla's beaches offer something for everyone.</p>
+
+          <h2>1. Panambur Beach</h2>
+          <p>Panambur Beach is undoubtedly the most popular beach in Mangaluru. Known for its clean environment and well-maintained facilities, this beach is perfect for families and adventure enthusiasts alike. The beach offers various water sports including jet skiing, parasailing, and banana boat rides.</p>
+          <p>The beach is also home to the annual International Kite Festival, which attracts participants from around the world. With lifeguards on duty and well-lit pathways, Panambur is one of the safest beaches to visit even during evening hours.</p>
+
+          <h2>2. Tannirbhavi Beach</h2>
+          <p>If you're seeking tranquility away from the crowds, Tannirbhavi Beach is your ideal destination. Located across the Gurupura River, this beach offers a peaceful retreat with its serene ambiance and beautiful surroundings. The beach is relatively less crowded, making it perfect for those who want to relax and enjoy nature.</p>
+          <p>The sunset views from Tannirbhavi are absolutely breathtaking, and the beach is known for its clean waters and soft sand. Local food stalls offer delicious Mangalorean snacks that you must try during your visit.</p>
+
+          <h2>3. Surathkal Beach</h2>
+          <p>Located near the NITK (National Institute of Technology Karnataka) campus, Surathkal Beach is famous for its lighthouse and rocky terrain. The beach has a unique charm with its combination of sand and rocks, creating interesting landscapes for photography enthusiasts.</p>
+          <p>The beach is relatively quiet during weekdays but attracts students and locals during weekends. The lighthouse standing tall near the beach adds a historic dimension to your beach visit.</p>
+
+          <h2>4. Someshwara Beach</h2>
+          <p>Named after the ancient Someshwara Temple located nearby, this beach is known for its rocky formations and scenic beauty. The beach offers a unique landscape where rocks meet the sea, creating a dramatic and beautiful setting.</p>
+          <p>The Someshwara Temple, dedicated to Lord Shiva, is an added attraction that you can visit along with the beach. The beach is less commercialized, offering a more natural and authentic coastal experience.</p>
+
+          <h2>5. NITK Beach</h2>
+          <p>Also known as the 16th Mile Beach, NITK Beach is accessible through the NITK campus. This beach is relatively secluded and offers a peaceful environment for those looking to escape the hustle and bustle of city life.</p>
+          <p>The beach is popular among students and is known for its clean environment and beautiful rock formations. It's an ideal spot for evening walks and watching the sunset.</p>
+
+          <h2>Best Time to Visit</h2>
+          <p>The best time to visit these beaches is from October to February when the weather is pleasant and the sea is calm. Avoid visiting during the monsoon season (June to September) as the beaches may be closed due to rough seas and strong currents.</p>
+
+          <h2>Safety Tips</h2>
+          <ul class="content-list">
+            <li>Always swim in designated areas with lifeguards present</li>
+            <li>Avoid swimming during rough weather or high tide</li>
+            <li>Keep the beaches clean - dispose of waste properly</li>
+            <li>Respect local culture and dress modestly</li>
+            <li>Stay hydrated and use sunscreen</li>
+          </ul>
+
+          <p>Each beach in Mangaluru has its own unique character and charm. Whether you're an adventure seeker, a peace lover, or a photography enthusiast, these beaches offer unforgettable experiences. So pack your bags, grab your sunscreen, and head to the beautiful beaches of Kudla!</p>
+        </div>
+
+        <div class="post-tags">
+          <strong>Tags:</strong>
+          <span class="tag">Beaches</span>
+          <span class="tag">Mangaluru</span>
+          <span class="tag">Travel Guide</span>
+          <span class="tag">Tourism</span>
+        </div>
+
+        <div class="share-buttons">
+          <strong>Share this post:</strong>
+          <button class="btn btn-outline" onclick="shareOnSocial('facebook')">Facebook</button>
+          <button class="btn btn-outline" onclick="shareOnSocial('twitter')">Twitter</button>
+          <button class="btn btn-outline" onclick="shareOnSocial('whatsapp')">WhatsApp</button>
+        </div>
+      </article>
+
+      <!-- Comments Section -->
+      <section class="comments">
+        <h2>Comments</h2>
+        <p class="comments-count"><span id="commentCount">0</span> Comments</p>
+        
+        <form id="commentForm">
+          <div class="form-group">
+            <input type="text" id="commentName" placeholder="Your name *" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="commentEmail" placeholder="Your email *" required>
+          </div>
+          <div class="form-group">
+            <textarea id="commentText" placeholder="Your comment *" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Post Comment</button>
+        </form>
+
+        <div id="commentList">
+          <!-- Comments will be dynamically added here -->
+        </div>
+      </section>
+
+      <!-- Related Posts -->
+      <section class="related-posts">
+        <h2>Related Posts</h2>
+        <div class="posts-grid">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="assets/images/tannirbhavi.jpg" alt="Hidden Beaches" loading="lazy">
+            </div>
+            <div class="post-content">
+              <h3>Hidden Beach Gems Near Mangaluru</h3>
+              <a href="post.html" class="btn-link">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image">
+              <img src="assets/images/water-sports.jpg" alt="Water Sports" loading="lazy">
+            </div>
+            <div class="post-content">
+              <h3>Adventure Water Sports in Kudla</h3>
+              <a href="post.html" class="btn-link">Read More →</a>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-image">
+              <img src="assets/images/beach-safety.jpg" alt="Beach Safety" loading="lazy">
+            </div>
+            <div class="post-content">
+              <h3>Beach Safety Guidelines</h3>
+              <a href="post.html" class="btn-link">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Namma Kudla</h3>
+          <p>Your trusted guide to exploring Mangaluru's beauty, culture, and heritage.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="guides.html">Travel Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li>📧 info@nammakudla.com</li>
+            <li>📞 +91 824 XXX XXXX</li>
+            <li>📍 Mangaluru, Karnataka</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Namma Kudla. All rights reserved.</p>
+        <p>Designed with ❤️ for Mangaluru</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
